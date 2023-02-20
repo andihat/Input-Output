@@ -1,0 +1,399 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+
+}
+
+@keyframes transition {
+    from {opacity: 0%; transform: translateX(-50%); filter: blur(10px); }
+    30% {
+        transform: translateX(0%);
+    }
+    60% {
+        filter: blur(0);
+    }
+    to { opacity: 100%; transform: translateX(0%); filter: blur(0);}
+}
+
+.hidden {
+    opacity: 0;
+    
+    
+}
+.show {
+    animation: transition 4s ;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+  
+  
+::-webkit-scrollbar-thumb {
+    background-color: mediumpurple;
+    border-radius: 5px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #16b5df;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    background-color: black;
+    color: white;
+
+    scale: 400%;
+    border: solid 0px black;
+    border-radius: 80px;
+    z-index: 99;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+
+}
+
+#scrollBtn:hover {
+    cursor: pointer;
+      
+}
+
+#scrollBtn:active {
+    cursor: pointer;
+    background: linear-gradient(to right,#16b5df  , mediumpurple );  
+}
+
+@keyframes buttonClick {
+    from {background-color: black;}
+    
+    to {background-color:rebeccapurple;}
+}
+
+@keyframes rotate {
+    from { rotate: 0deg;}
+    50% {
+        scale: 1 1.5;
+    }
+    to {rotate: 360deg;}
+}
+
+#blob {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background: linear-gradient(to right,#16b5df -60% , mediumpurple );
+    animation: rotate 40s infinite;
+    filter: blur(200px);
+
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center 0%;
+    position: absolute;
+    text-align: center;
+    
+}
+.firstContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.introText {
+    top: 50%;
+    left: 50%;
+}
+
+.emptySpace {
+    height: 40%;
+}
+
+.titleSpace {
+    height: 800px
+    
+}
+.emptyTitleSpace {
+    height: 300px;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 100%;
+    
+}
+.card {
+    height: 800px;
+    width: 75%;
+    border: solid 3px white;
+    border-radius: 40px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+
+}
+
+.leftPartText {
+    height: 100%;
+    background-color: black;
+    float: left;
+    width: 50%;
+    border-bottom-left-radius: 38px;
+    border-top-left-radius: 38px;
+    text-align: center;
+}
+
+.rightPartImage {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(computer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px, 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    
+
+}
+
+.rightPartImage1 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(firstMouse.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px, 0px;
+    
+}
+
+.rightPartImage2 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(ballMouse.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px, 0px ;
+    
+    
+}
+
+.rightPartImage3 {
+    height: 100%;
+    background-color: lightgray;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(opticalMouse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 00px, 0px ;
+    
+    
+}
+
+.rightPartImage4 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(typewriter.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -10px, 0px ;
+    
+    
+}
+
+.rightPartImage5 {
+    height: 100%;
+    background-color: black;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(ibmModel2M.png);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 120px, 0px ;
+    text-align: left;
+    
+    
+}
+
+.rightPartImage6 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(crt-monitor.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px, 0px ;
+    text-align: left;
+    
+    
+}
+
+.rightPartImage7 {
+    height: 100%;
+    background-color: lightgray;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(oldLaptop.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px, 0px ;
+    text-align: left;
+    
+    
+}
+
+.rightPartImage8 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(oled.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px, 0px ;
+    text-align: left;
+    
+    
+}
+.rightPartImage9 {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 50%;
+    border-top-right-radius: 38px;
+    border-bottom-right-radius: 38px;
+
+    background-image: url(hiperX.png);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10px, 0px ;
+    text-align: left;
+    
+    
+}
+
+.rightPartImageText {
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    padding-left: 16px;
+    z-index: 90;
+    
+    
+}
+
+
+.rightImage:hover {
+    scale: 120%;
+    transition: all 1s;
+    
+}
+
+img {
+    border-radius: 40px;
+}
+
+.mice {
+    scale: 75%;
+}
+
+h1 {
+    color: white;
+    font-size: 90px;
+    font-family: "Arial", sans-serif;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 40px ;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    padding: 60px;
+    text-shadow: 2px 2px black;
+    margin: auto;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    padding: 0;
+
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    color: grey;
+    
+    font-family: "Arial", sans-serif;
+    font-size: medium;
+    
+}
+
+h5 {
+    color: whitesmoke;
+    font-size: 38px ;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    padding: 40px;
+    text-shadow: 2px 2px black;
+    margin: auto;
+}
+
+h6 {
+    color: mediumpurple;
+    font-size: 60px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+
+}
